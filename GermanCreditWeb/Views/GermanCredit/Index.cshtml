@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "German Credit Loan Application";
+}
+
+<h2>Loan Application</h2>
+
+<form method="post" enctype="multipart/form-data" asp-action="ImportData">
+    <div class="form-group">
+        <label for="csvFile">Select CSV file:</label>
+        <input type="file" class="form-control-file" id="csvFile" name="csvFile"> <button type="submit" class="btn btn-primary">Import</button>
+        <br /><br />
+    </div>
+
+</form>
+
+<h2>Result: @ViewBag.PredictionResult</h2>
